@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>どげデジ | なんでも相談できる、デジタルの窓口</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="index.html">どげ<span>デジ</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">経歴</a></li>
+      <li><a href="#services">相談メニュー</a></li>
+      <li><a href="column.html">コラム</a></li>
+      <li><a href="#inquiry">お問い合わせ</a></li>
+      <li><a href="#contact">連絡先</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="profile-badge">
+          <img src="profile.jpg" alt="高橋司の写真" class="profile-photo">
+          <div class="profile-badge-text">
+            <span class="profile-name">高橋 司</span>
+            <span class="profile-role">どげデジ / なんでも屋</span>
+          </div>
+        </div>
+        <div class="eyebrow">どげデジ ― なんでも相談 受付中</div>
+        <h1>「わからない」を、<br><span class="hl">まるごと</span>引き受けます。</h1>
+        <p class="hero-sub">
+          WEBサイトが欲しい。パソコンの操作がわからない。動画を編集したい。
+          そんな困りごとを、ジャンルを問わず一人で解決する何でも屋です。
+          拠点は島根県出雲市ですが、Zoom・Slack・Discordなどオンラインで全国対応可能です。
+        </p>
+        <div class="hero-cta">
+          <a href="#services" class="btn btn-primary">相談メニューを見る</a>
+          <a href="#contact" class="btn btn-ghost">連絡する</a>
+        </div>
+      </div>
+
+      <div class="chatcard" aria-hidden="true">
+        <div class="chatcard-header">
+          <img src="profile.jpg" alt="" class="chatcard-avatar">
+          <div class="chatcard-header-text">
+            <span class="chatcard-name">どげデジ</span>
+            <span class="chatcard-status"><span class="status-dot"></span>相談受付中</span>
+          </div>
+        </div>
+        <div class="chatcard-body" id="log">
+          <!-- filled by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-text">
+        <div class="section-head">
+          <span class="section-tag">01</span>
+          <h2 class="section-title">経歴</h2>
+        </div>
+        <img src="profile-large.jpg" alt="高橋司の写真" class="about-photo">
+        <p>
+          <strong>高橋 司</strong>。小学生の頃からパソコンに触れるのが好きで、
+          趣味として毎日欠かさず触り続けてきた。松江工業高等専門学校を中退後、20代は東京・大阪・福岡と
+          拠点を転々としながら複数の業界に就職した。
+        </p>
+        <p>
+          中でも、スマートフォン国内シェアNo.1企業のカスタマーサポートでは、サポートスペシャリストとして
+          1日に30人前後のお客様と向き合い、一人ひとりの「困った」を解決へと導いてきた。専門知識のない方にも
+          わかりやすく伝え、最後に笑顔になってもらうことに、大きなやりがいを感じていた。
+        </p>
+        <p>
+          それでも組織に属して働くことはどれも長くは続かず、独立を決意。子どもの頃から積み重ねてきたパソコンへの慣れと、
+          カスタマーサポートで培った「わかりやすく伝える力」を土台に、WEB上の情報だけを頼りに独学でIT・デジタル分野を学び始める。
+        </p>
+        <p>
+          30歳を機に地元・出雲へ帰郷。<strong>どげデジ</strong>として、
+          ITコンサルタントから電子機器の操作説明まで、幅広い領域の仕事を一人で請け負っている。
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-time">小学生〜</span>
+          <div class="tl-body">パソコンに没頭</div>
+          <div class="tl-desc">趣味として毎日欠かさず触り続け、今も続いている</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-time">10代</span>
+          <div class="tl-body">松江工業高等専門学校 中退</div>
+          <div class="tl-desc">決められたレールを、途中で降りる</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-time">20代</span>
+          <div class="tl-body">東京・大阪・福岡を転々</div>
+          <div class="tl-desc">複数業界へ就職</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-time">20代</span>
+          <div class="tl-body">スマホ国内シェアNo.1企業でサポートスペシャリスト</div>
+          <div class="tl-desc">1日30人前後のお客様の「困った」に向き合い、笑顔で解決に導く</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-time">→</span>
+          <div class="tl-body">独立</div>
+          <div class="tl-desc">どれも長くは続かず、組織に属さない働き方を選ぶ</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-time">→</span>
+          <div class="tl-body">独学でIT・デジタルを習得</div>
+          <div class="tl-desc">WEB上の情報だけを頼りに、実務レベルまで独力で学ぶ</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-time">30歳</span>
+          <div class="tl-body">出雲へ帰郷</div>
+          <div class="tl-desc">地元・島根県出雲市を拠点に定める</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-time">now</span>
+          <div class="tl-body">どげデジとして活動中</div>
+          <div class="tl-desc">専門を一つに絞らないのが強み</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">相談メニュー</h2>
+      </div>
+      <div class="tickets">
+        <div class="ticket">
+          <span class="ticket-tag">consult</span>
+          <h3>ITコンサルタント</h3>
+          <p>何から手をつけていいかわからないIT・デジタル周りの課題を、一緒に整理して解決策を考えます。</p>
+        </div>
+        <div class="ticket">
+          <span class="ticket-tag">build</span>
+          <h3>WEBサイト制作</h3>
+          <p>個人・お店・小さな会社のWEBサイトを、目的に合わせて一から制作します。</p>
+        </div>
+        <div class="ticket">
+          <span class="ticket-tag">support</span>
+          <h3>電子機器の操作説明</h3>
+          <p>スマホ・パソコン・各種デバイスの「使い方がわからない」を、わかる言葉で丁寧に説明します。</p>
+        </div>
+        <div class="ticket">
+          <span class="ticket-tag">edit</span>
+          <h3>動画編集</h3>
+          <p>撮影した素材をもとに、目的に合った形に編集します。</p>
+        </div>
+        <div class="ticket">
+          <span class="ticket-tag">*</span>
+          <h3>日常の困りごと相談</h3>
+          <p>「インターネットが遅い」「パソコンが遅い」「通信費が高いけど契約変更がよくわからない」など。
+          上記に当てはまらない相談も歓迎です。まずは話を聞かせてください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="inquiry">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">お問い合わせフォーム</h2>
+      </div>
+
+      <div class="form-panel">
+        <div class="form-note">通常、2営業日以内にご返信します</div>
+
+        <form id="inquiry-form">
+          <div class="field">
+            <label for="type-individual">種別</label>
+            <div class="radio-row">
+              <label class="radio-opt">
+                <input type="radio" name="type" id="type-individual" value="個人" checked>
+                個人
+              </label>
+              <label class="radio-opt">
+                <input type="radio" name="type" id="type-corporate" value="法人">
+                法人
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="name">お名前（個人の場合）／ 会社名（法人の場合）</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="field">
+            <label for="message">内容</label>
+            <textarea id="message" name="message" placeholder="ご相談内容をできるだけ詳しくお書きください" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="contact-info">連絡先（メールアドレスまたは電話番号）</label>
+            <input type="text" id="contact-info" name="contact-info" required>
+          </div>
+
+          <button type="submit" class="form-submit">送信する</button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">04</span>
+        <h2 class="section-title">連絡先</h2>
+      </div>
+      <div class="contact-panel">
+        <div class="contact-lead">まずは、気軽に話してください。</div>
+        <p class="contact-sub">メールでもお電話でも構いません。ジャンルを問わず、まずはお気軽にご連絡ください。</p>
+        <div class="contact-rows">
+          <div class="contact-row" style="cursor:default;">
+            <span class="k">base:</span> 島根県出雲市
+          </div>
+          <div class="contact-row" style="cursor:default;">
+            <span class="k">online:</span> Zoom / Slack / Discord など各種オンライン対応可
+          </div>
+          <a class="contact-row" href="mailto:dogedezi.izumo@gmail.com">
+            <span class="k">mail:</span> dogedezi.izumo@gmail.com
+          </a>
+          <a class="contact-row" href="tel:08085486563">
+            <span class="k">tel:</span> 080-8548-6563
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 どげデジ / Tsukasa Takahashi</div>
+</footer>
+
+<script>
+  const logs = [
+    { q: "サイトを持ちたいけど何から始めれば？", a: "目的を一緒に整理して、必要な形をご提案します。" },
+    { q: "パソコンの動きが遅くて困ってる", a: "原因を切り分けて、直せるところから対応します。" },
+    { q: "動画編集を任せたい", a: "素材を見せてもらえれば、仕上がりイメージから相談できます。" },
+    { q: "これ、誰に聞けばいいかもわからない", a: "まずはそのまま話してください。窓口はここです。" }
+  ];
+
+  const container = document.getElementById('log');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function render(){
+    container.innerHTML = '';
+    logs.forEach((item, i) => {
+      const qRow = document.createElement('div');
+      qRow.className = 'bubble-row q';
+      const qBubble = document.createElement('div');
+      qBubble.className = 'bubble';
+      qBubble.textContent = item.q;
+      qRow.appendChild(qBubble);
+
+      const aRow = document.createElement('div');
+      aRow.className = 'bubble-row a';
+      const aBubble = document.createElement('div');
+      aBubble.className = 'bubble';
+      aBubble.textContent = item.a;
+      aRow.appendChild(aBubble);
+
+      if(!reduceMotion){
+        qRow.style.animationDelay = (i * 0.9) + 's';
+        aRow.style.animationDelay = (i * 0.9 + 0.35) + 's';
+      }
+
+      container.appendChild(qRow);
+      container.appendChild(aRow);
+    });
+  }
+
+  render();
+
+  // ---- inquiry form: build a mailto draft with the entered content ----
+  const inquiryForm = document.getElementById('inquiry-form');
+  const formStatus = document.getElementById('form-status');
+
+  inquiryForm.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const type = inquiryForm.querySelector('input[name="type"]:checked').value;
+    const name = document.getElementById('name').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const contactInfo = document.getElementById('contact-info').value.trim();
+
+    const toAddress = 'dogedezi.izumo@gmail.com';
+    const subject = `【どげデジ お問い合わせ】${type} / ${name}`;
+    const body =
+      `種別: ${type}\n` +
+      `お名前／会社名: ${name}\n` +
+      `連絡先: ${contactInfo}\n\n` +
+      `--- 内容 ---\n${message}\n`;
+
+    const mailtoUrl =
+      `mailto:${toAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
+
+    formStatus.textContent = 'メールソフトが開きます。内容を確認して送信してください。';
+  });
+</script>
+
+</body>
+</html>
