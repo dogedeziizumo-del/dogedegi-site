@@ -74,7 +74,7 @@ header{
 .logo{
   font-family:'Dela Gothic One', var(--sans);
   font-weight:400;
-  font-size:1.05rem;
+  font-size:5.25rem;
   letter-spacing:-0.01em;
   color:var(--text);
   text-decoration:none;
@@ -98,6 +98,7 @@ header{
 .nav-links a.is-current{ color:var(--accent); }
 @media (max-width:640px){
   .nav-links{ gap:16px; font-size:0.72rem; }
+  .logo{ font-size:2.6rem; }
 }
 
 /* ---------- HERO ---------- */
