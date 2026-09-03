@@ -72,11 +72,14 @@ header{
   margin:0 auto;
 }
 .logo{
-  font-family:var(--mono);
-  font-size:0.95rem;
-  letter-spacing:0.02em;
+  font-family:'Dela Gothic One', var(--sans);
+  font-weight:400;
+  font-size:1.05rem;
+  letter-spacing:-0.01em;
   color:var(--text);
   text-decoration:none;
+  display:inline-block;
+  transform:skewX(-6deg);
 }
 .logo span{ color:var(--accent); }
 .nav-links{
