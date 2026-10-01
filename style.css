@@ -796,15 +796,28 @@ footer{
 .article-toc a.is-active{ color:var(--accent); font-weight:700; }
 .article-body p{
   color:var(--text);
-  margin-bottom:20px;
-  line-height:2;
+  margin-bottom:28px;
+  line-height:2.05;
 }
 .article-body h2{
   font-family:var(--serif);
-  font-weight:700;
-  font-size:1.3rem;
-  margin:36px 0 16px;
+  font-weight:900;
+  font-size:1.5rem;
+  margin:64px 0 22px;
+  padding-bottom:14px;
+  border-bottom:2px solid var(--line);
   scroll-margin-top:88px;
+}
+.article-body h2::before{
+  content:"";
+  display:inline-block;
+  width:26px;
+  height:4px;
+  margin-right:10px;
+  margin-bottom:4px;
+  background:var(--accent);
+  border-radius:2px;
+  vertical-align:middle;
 }
 .article-body ul{
   margin:0 0 20px 0;
@@ -812,7 +825,8 @@ footer{
   color:var(--text);
 }
 .article-body li{
-  margin-bottom:10px;
+  margin-bottom:14px;
+  line-height:1.8;
 }
 .article-body strong{
   color:var(--text);
@@ -821,6 +835,47 @@ footer{
 .article-mark{
   background:linear-gradient(transparent 62%, var(--accent-tint) 62%);
   font-weight:700;
+}
+/* ---------- ARTICLE BENEFIT GRID (icon cards inside column articles) ---------- */
+.benefit-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin:0 0 28px 0;
+}
+@media (max-width:560px){
+  .benefit-grid{ grid-template-columns:1fr; }
+}
+.benefit-card{
+  background:var(--bg-panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:22px;
+}
+.benefit-card .benefit-icon{
+  width:40px;
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--accent-tint);
+  border-radius:10px;
+  margin-bottom:14px;
+  color:var(--accent);
+}
+.benefit-card .benefit-icon svg{ width:22px; height:22px; }
+.benefit-card h3{
+  font-family:var(--sans);
+  font-size:1rem;
+  font-weight:700;
+  color:var(--text);
+  margin-bottom:8px;
+}
+.benefit-card p{
+  font-size:0.88rem;
+  color:var(--text-muted);
+  line-height:1.75;
+  margin:0;
 }
 /* link to the next column entry (or back to the list, when there isn't one yet) */
 .article-next{
