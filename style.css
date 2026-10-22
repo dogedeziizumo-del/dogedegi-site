@@ -616,6 +616,30 @@ footer{
 }
 
 /* ---------- COLUMN LIST (visual card) ---------- */
+.news-group{
+  margin-bottom:48px;
+}
+.news-group:last-child{
+  margin-bottom:0;
+}
+.news-group-title{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-family:var(--sans);
+  font-weight:700;
+  font-size:0.95rem;
+  letter-spacing:0.04em;
+  color:var(--text-muted);
+  margin-bottom:18px;
+}
+.news-group-title::before{
+  content:"";
+  width:18px;
+  height:2px;
+  background:var(--accent);
+  display:inline-block;
+}
 .column-list{
   display:grid;
   grid-template-columns:repeat(2, 1fr);
