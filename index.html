@@ -111,26 +111,49 @@
       </div>
       <!--
         今後の更新方法:
-        新しいコラム記事を公開したときは、下の column-card 1件をその記事の内容に差し替えてください
-        （タイトル・抜粋・リンク先・日付など）。tone-a/tone-b/tone-c はcolumn.html側とローテーションを揃えてください。
-        お知らせ（記事ページを持たない告知など）を追加する場合も、同じ column-card の形で
-        （リンク先が無ければ a タグの代わりに div タグで）ここに追加できます。
+        ここは「お知らせ」と「コラム」を別々のグループ（news-group）で表示します。
+        ・お知らせ（記事ページを持たない告知や、今回のPHP脆弱性のような単発の注意喚起など）は
+          お知らせグループの column-list に column-card を追加してください（リンク先が無ければ a タグの代わりに div タグで）。
+          お知らせはコラムの「第◯回」には含めず、column-meta には日付や「お知らせ」などの表記のみを入れます。
+        ・新しいコラム記事を公開したときは、コラムグループの column-card 1件をその記事の内容に差し替えてください
+          （タイトル・抜粋・リンク先・日付など）。tone-a/tone-b/tone-c はcolumn.html側とローテーションを揃えてください。
       -->
-      <div class="column-list">
-        <a class="column-card" href="column/2026-10-security-notice.html">
-          <div class="column-eyecatch tone-c"><span class="column-tag">セキュリティ</span></div>
-          <div class="column-card-body">
-            <div class="column-meta">2026.10 &nbsp;·&nbsp; 第3回</div>
-            <h3>首相も緊急の呼びかけ。PHPの脆弱性、あなたのサイトは大丈夫ですか？</h3>
-            <p>
-              SNSで話題になった緊急のセキュリティ注意喚起をきっかけに、静的サイトと動的サイトの違いや、
-              情報を見極める3つのポイントについてご紹介します。
-            </p>
-            <span class="column-more">続きを読む →</span>
-          </div>
-        </a>
+      <div class="news-group">
+        <div class="news-group-title">お知らせ</div>
+        <div class="column-list">
+          <a class="column-card" href="column/2026-10-security-notice.html">
+            <div class="column-eyecatch tone-c"><span class="column-tag">セキュリティ</span></div>
+            <div class="column-card-body">
+              <div class="column-meta">2026.10.22 &nbsp;·&nbsp; お知らせ</div>
+              <h3>首相も緊急の呼びかけ。PHPの脆弱性、あなたのサイトは大丈夫ですか？</h3>
+              <p>
+                SNSで話題になった緊急のセキュリティ注意喚起をきっかけに、静的サイトと動的サイトの違いや、
+                情報を見極める3つのポイントについてご紹介します。
+              </p>
+              <span class="column-more">続きを読む →</span>
+            </div>
+          </a>
+        </div>
       </div>
-      <a href="column.html" class="btn btn-ghost" style="margin-top:24px;">コラム一覧を見る</a>
+
+      <div class="news-group">
+        <div class="news-group-title">コラム</div>
+        <div class="column-list">
+          <a class="column-card" href="column/2026-10-reflection-habit.html">
+            <div class="column-eyecatch tone-b"><span class="column-tag">考え方</span></div>
+            <div class="column-card-body">
+              <div class="column-meta">2026.10 &nbsp;·&nbsp; 第2回</div>
+              <h3>振り返り、ちゃんとできていますか？</h3>
+              <p>
+                年に1回、月に1回、そして毎日。振り返りを習慣にしてみて気づいた、4つの良さと気をつけたい注意点について。
+                仕事での活かし方も交えてご紹介します。
+              </p>
+              <span class="column-more">続きを読む →</span>
+            </div>
+          </a>
+        </div>
+        <a href="column.html" class="btn btn-ghost" style="margin-top:24px;">コラム一覧を見る</a>
+      </div>
     </div>
   </section>
 
